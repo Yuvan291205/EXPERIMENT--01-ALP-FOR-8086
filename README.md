@@ -117,12 +117,9 @@ ret
 ```
 org 100h
 
-mov ax,1234h
-mov [0200h],ax
+mov ax,0x5a98h
+mov bx,0x9f98h
 
-mov si,0200h
-mov ax,002h
-mov bx,[si]
 mul bx
 
 ret
@@ -130,8 +127,9 @@ ret
 ```
 
  ## Output  
+<img width="1918" height="886" alt="image" src="https://github.com/user-attachments/assets/3b3e31a9-0fa8-4700-80b1-520a1a0fedea" />
 
-<img width="1910" height="1020" alt="image" src="https://github.com/user-attachments/assets/f5b8b93a-10a1-464b-8fba-dd6126c88114" />
+
 
 ## Division alp 
 ```
@@ -146,6 +144,59 @@ ret
 ## Output  
 
 <img width="1888" height="921" alt="Screenshot 2025-08-18 144718" src="https://github.com/user-attachments/assets/a983ced1-735c-475a-a073-2124b2a75bed" />
+
+## Program for logical operation:
+## AND:
+```
+org 100h
+
+
+MOV AX, 5555H
+MOV BX, 0F0FH
+AND AX, BX
+MOV [2000H], AX
+
+ret
+```
+## Output:
+<img width="1918" height="888" alt="image" src="https://github.com/user-attachments/assets/ab9cbed0-f498-4a7a-a6f0-71f377132129" />
+
+## OR:
+```
+org 100h
+
+
+MOV AX, 5555H
+OR AX, BX
+MOV [2002H], AX
+ret
+```
+
+## Output:
+<img width="1918" height="983" alt="image" src="https://github.com/user-attachments/assets/5680eaa2-1865-4610-ab7e-d5d386116c11" />
+
+## XOR:
+```
+MOV AX, 5555H      
+XOR AX, BX          
+MOV [2004H], AX
+ret
+```
+
+## output:
+<img width="1832" height="898" alt="image" src="https://github.com/user-attachments/assets/537a5417-8ecd-43c8-8f87-ab3e1d247330" />
+
+
+## NOT:
+```
+MOV AX, 5555H      
+NOT AX             
+MOV [2006H], AX
+ret
+```
+## output:
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/4f6817c2-c300-4a16-a7e7-64df060dcdea" />
+
 
 ## Result :
  The execution of ALP on fundamental arithmetic operations is successfully completed.
