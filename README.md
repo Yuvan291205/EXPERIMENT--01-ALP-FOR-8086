@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name : Yuvan M
-Roll no : 212223240188
-Date of experiment : 18.08.2025
+## NAME : YUVAN M
+## REG NO : 212223240188
+## DATE OF EXPERIMENT : 18.08.2025
 
 
 
